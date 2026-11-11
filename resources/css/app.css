@@ -1,0 +1,119 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-serif: Georgia, 'Times New Roman', serif;
+
+    --color-slate-50: #f9f6f0;
+    --color-slate-100: #f2eee7;
+    --color-slate-200: #e7e2d9;
+    --color-slate-300: #d2ccc2;
+    --color-slate-400: #85827b;
+    --color-slate-500: #666561;
+    --color-slate-600: #666561;
+    --color-slate-700: #45433f;
+    --color-slate-800: #292824;
+    --color-slate-900: #191816;
+    --color-slate-950: #191816;
+
+    --color-clinic-50: #fbefeb;
+    --color-clinic-100: #f5ded6;
+    --color-clinic-300: #e9ab96;
+    --color-clinic-500: #d97757;
+    --color-clinic-600: #d97757;
+    --color-clinic-700: #cc5a37;
+    --color-clinic-800: #ad482d;
+
+    --color-status-waiting: #b45309;
+    --color-status-called: #d97757;
+    --color-status-completed: #047857;
+    --color-status-cancelled: #64748b;
+}
+
+@layer base {
+    body {
+        letter-spacing: -0.01em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #f9f6f0;
+        color: #191816;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+        letter-spacing: -0.035em;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font: inherit;
+    }
+}
+
+[class~='bg-slate-50'] {
+    background-color: #f9f6f0;
+}
+
+[class~='bg-white'] {
+    background-color: #ffffff;
+}
+
+[class~='text-slate-900'] {
+    color: #191816;
+}
+
+[class~='text-slate-500'],
+[class~='text-slate-600'] {
+    color: #666561;
+}
+
+[class~='bg-clinic-600'] {
+    background-color: #d97757;
+}
+
+[class~='bg-clinic-700'] {
+    background-color: #cc5a37;
+}
+
+[class~='text-clinic-700'] {
+    color: #cc5a37;
+}
+
+[class~='text-clinic-800'] {
+    color: #ad482d;
+}
+
+[class~='hover:bg-clinic-700']:hover {
+    background-color: #cc5a37;
+}
+
+[class~='hover:bg-clinic-800']:hover {
+    background-color: #ad482d;
+}
+
+[class~='hover:text-clinic-800']:hover {
+    color: #ad482d;
+}
+
+[class~='rounded-xl'] {
+    border-radius: 0.875rem;
+}
+
+[class~='rounded-2xl'] {
+    border-radius: 1.125rem;
+}
+
+[class~='rounded-3xl'] {
+    border-radius: 1.375rem;
+}
+
+[class~='shadow-sm'] {
+    box-shadow: 0 1px 2px rgb(15 23 42 / 0.035), 0 8px 24px -20px rgb(15 23 42 / 0.12);
+}
